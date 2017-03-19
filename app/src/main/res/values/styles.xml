@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#AD1457</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="banner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">50dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:contentDescription">@string/app_name</item>
+        <item name="android:src">@drawable/banner5</item>
+    </style>
+
+    <style name="descriptionCard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="descriptionText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingBottom">@dimen/description_text_topbottom_padding</item>
+        <item name="android:paddingLeft">@dimen/description_text_leftright_padding</item>
+        <item name="android:paddingRight">@dimen/description_text_leftright_padding</item>
+        <item name="android:paddingTop">@dimen/description_text_topbottom_padding</item>
+        <item name="android:textColor">@color/primaryText</item>
+        <item name="android:background">@color/colorPrimaryLight</item>
+    </style>
+
+    <style name="contactDetailes">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/contact_detailes_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">@dimen/drawable_padding</item>
+        <item name="android:paddingTop">@dimen/contact_padding</item>
+        <item name="android:textColor">@color/primaryText</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+    </style>
+
+    <style name="secondaryText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/contact_padding</item>
+        <item name="android:paddingLeft">@dimen/divider_margin_left</item>
+        <item name="android:textColor">@color/secondryText</item>
+    </style>
+
+    <style name="divider">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/divider_height</item>
+        <item name="android:layout_marginLeft">@dimen/divider_margin_left</item>
+        <item name="android:background">@color/dividerColor</item>
+    </style>
+
+</resources>

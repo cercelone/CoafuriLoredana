@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.coafuriloredana.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/desc_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView style="@style/banner" />
+
+            <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/desc_widget"
+                style="@style/descriptionCard"
+                app:cardCornerRadius="@dimen/description_card_corner_radius"
+                app:cardElevation="@dimen/description_card_elevation"
+                app:cardUseCompatPadding="true">
+
+                <TextView
+                    style="@style/descriptionText"
+                    android:text="@string/descriere" />
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc_layout"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/contact_linear_layout_paddings"
+            android:paddingRight="@dimen/contact_linear_layout_paddings">
+
+
+            <TextView
+                style="@style/contactDetailes"
+                android:autoLink="map"
+                android:drawableLeft="@drawable/placeholder"
+                android:text="@string/adresa" />
+
+            <TextView
+                style="@style/secondaryText"
+                android:text="@string/adr_desc" />
+
+            <View style="@style/divider" />
+
+            <TextView
+                style="@style/contactDetailes"
+                android:drawableLeft="@drawable/phone_button"
+                android:text="@string/telefon" />
+
+            <TextView
+                style="@style/secondaryText"
+                android:text="@string/tel_desc" />
+
+            <View style="@style/divider" />
+
+            <TextView
+                style="@style/contactDetailes"
+                android:drawableLeft="@drawable/facebook_button"
+                android:text="@string/facebook" />
+
+            <TextView
+                style="@style/secondaryText"
+                android:text="@string/facebook_desc" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
