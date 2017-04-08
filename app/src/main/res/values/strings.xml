@@ -8,4 +8,5 @@
     <string name="tel_desc">Suna acum</string>
     <string name="adr_desc">Obtine indicatii</string>
     <string name="btn_programare">Obtine programare</string>
+    <string name="banner_desc">Banner aplicatie</string>
 </resources>
