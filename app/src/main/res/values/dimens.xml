@@ -3,14 +3,15 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="default_text_size">16sp</dimen>
-    <dimen name="divider_margin_left">40dp</dimen>
+    <dimen name="divider_margin_left">56dp</dimen>
+    <dimen name="divider_margin_right">16dp</dimen>
     <dimen name="drawable_padding">16dp</dimen>
     <dimen name="contact_padding">8dp</dimen>
     <dimen name="description_text_topbottom_padding">8dp</dimen>
     <dimen name="description_text_leftright_padding">8dp</dimen>
     <dimen name="description_card_elevation">4dp</dimen>
     <dimen name="description_card_corner_radius">3dp</dimen>
-    <dimen name="contact_linear_layout_paddings">16dp</dimen>
-    <dimen name="contact_detailes_height">0dp</dimen>
+    <dimen name="contact_linear_layout_padding">16dp</dimen>
+    <dimen name="contact_details_height">0dp</dimen>
     <dimen name="divider_height">1dp</dimen>
 </resources>
