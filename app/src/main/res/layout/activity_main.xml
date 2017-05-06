@@ -18,7 +18,7 @@
 
             <ImageView
                 style="@style/banner"
-                android:contentDescription="@string/banner_desc"/>
+                android:contentDescription="@string/banner_desc" />
 
             <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/desc_widget"
@@ -44,9 +44,9 @@
 
             <TextView
                 style="@style/contactDetailes"
-                android:onClick="navigatemaps"
                 android:drawableLeft="@drawable/placeholder"
                 android:drawableStart="@drawable/placeholder"
+                android:onClick="navigatemaps"
                 android:text="@string/adresa" />
 
             <TextView
@@ -57,11 +57,11 @@
 
             <TextView
                 style="@style/contactDetailes"
+                android:autoLink="phone"
                 android:drawableLeft="@drawable/phone_button"
                 android:drawableStart="@drawable/phone_button"
                 android:text="@string/telefon"
-                android:autoLink="phone"
-                android:textColorLink="@color/primaryText"/>
+                android:textColorLink="@color/primaryText" />
 
             <TextView
                 style="@style/secondaryText"
@@ -73,8 +73,8 @@
                 style="@style/contactDetailes"
                 android:drawableLeft="@drawable/facebook_button"
                 android:drawableStart="@drawable/facebook_button"
-                android:text="@string/facebook"
-                android:onClick="lunchFacebook"/>
+                android:onClick="lunchFacebook"
+                android:text="@string/facebook" />
 
             <TextView
                 style="@style/secondaryText"

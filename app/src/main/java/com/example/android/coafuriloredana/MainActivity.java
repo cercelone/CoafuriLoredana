@@ -10,14 +10,14 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static String FACEBOOK_URL = "https://www.facebook.com/CoafuriLoredana";
+    public static String FACEBOOK_PAGE_ID = "CoafuriLoredana";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
-    public static String FACEBOOK_URL = "https://www.facebook.com/CoafuriLoredana";
-    public static String FACEBOOK_PAGE_ID = "CoafuriLoredana";
 
     //method to get the right URL to use in the facebook intent
     public String getFacebookPageURL(Context context) {
@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
             return FACEBOOK_URL; //normal web url
         }
     }
+
     //method used to visit facebook page of the business
     public void lunchFacebook(View v) {
         Intent facebookIntent = new Intent(Intent.ACTION_VIEW);
@@ -40,8 +41,9 @@ public class MainActivity extends AppCompatActivity {
         facebookIntent.setData(Uri.parse(facebookUrl));
         startActivity(facebookIntent);
     }
-//method used to find place on GoogleMaps
-    public void navigatemaps(View v){
+
+    //method used to find place on GoogleMaps
+    public void navigatemaps(View v) {
         Uri mapAddress = Uri.parse("geo:46.835612, 27.458324");
         Intent mapIntent = new Intent(android.content.Intent.ACTION_VIEW, mapAddress);
         mapIntent.setPackage("com.google.android.apps.maps");
